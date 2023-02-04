@@ -12,16 +12,16 @@
 
 # (*) Усложнение. При выводе результата на экран воспользуйтесь тернарным оператором.
 
-import random as rn
+import random as array
 N = int(input ("Введите количество чисел N в списке: "))
 X = int(input ("Введите число X: "))
-res = 0
+result = 0
 l=[]
 for i in range (0,N):
-    l.append(rn.randint(0,N//2))
+    l.append(array.randint(0,N//2))
 print(X)
 print(l)
 for i in range(len(l)):
     if l[i] == X:
-        res=res+1
-print(res)
+        result = result + 1 
+print(result)
